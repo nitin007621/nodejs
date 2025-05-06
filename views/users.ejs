@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+           
+  <form action="/create" method="post">
+    <label for="Name">name:-</label>
+    <input type="text" name="Name" required><br><br>
+    <label for="email">Email:-</label>
+    <input type="email" name="email" required> <br><br>
+   <button type="submit">submit</button>
+
+   </form>
+  <div class="user">
+    <% for(let i = 0; i < users.length; i++) { %>
+      <div class="single-user">
+        <h2>   <%= users[i].Name %>   </h2>
+         
+         <p>email:-  <%= users[i].email %>   </p>
+          <div>
+            <form method="POST" action="/delete/<%= users[i].id %>?_method=DELETE" style="display:inline;">
+            <button type="submit">❌</button>
+            </form> 
+             <button><a href="/user/<%= users[i].id %>">update</a></button>
+          </div>
+      </div>
+    <% } %>
+    
+  
+     
+   
+  </div> 
+  
+
+     
+     
+</body>
+</html> 

@@ -1,0 +1,16 @@
+.user{
+    /* height: 180px; */
+    /* width: 350px; */
+    /* border: 2px solid blue; */
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    /* gap: 30px;row */
+    row-gap: 50px;
+}
+.single-user{
+    height: 150px;
+    margin-left: 20px;
+    border: 2px solid red;
+    background-color: bisque;
+}

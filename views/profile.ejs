@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    
+  <form method="POST" action="/update/<%= user.id %>?_method=PUT">
+    <p>welcome to profile page</p>
+    
+    <label for="Name">Hello</label>
+    <input type="text" value="<%= user.Name %>" name="Name" style="border: none; font-size: 20px;"><br><br>
+    <label for="email">email</label>
+    <input type="text" value="<%= user.email %>" name="email" style="border: none;">
+      <button type="submit">update</button>
+  </form> 
+  
+
+     
+     
+</body>
+</html> 
