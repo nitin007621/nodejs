@@ -24,7 +24,7 @@ app.use(methodOverride('_method'));
 
  app.use('/',router)
 
- mongoose.connect('mongodb+srv://champiannitin02:gPLyxXwh9QxZLBFn@crud.t8ws2en.mongodb.net/?', {
+ mongoose.connect('mongodb://localhost:27017/edemo', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   }).then(() => {
